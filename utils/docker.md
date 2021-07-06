@@ -11,7 +11,7 @@
 ## 一键脚本安装
 
 ```
-wget https://raw.githubusercontent.com/Xtao-Labs/PagerMaid-Modify/master/utils/docker.sh
+wget https://raw.githubusercontent.com/gchengyu/PagerMaid-Modify-Modify/master/utils/docker.sh
 bash docker.sh
 ```
 
@@ -22,7 +22,7 @@ bash docker.sh
 1. 准备脚本
 
 ```
-git clone https://github.com/Xtao-Labs/PagerMaid-Modify pagermaid
+git clone https://github.com/gchengyu/PagerMaid-Modify-Modify pagermaid
 cd pagermaid
 cp docker-compose.gen.yml docker-compose.yml
 ```

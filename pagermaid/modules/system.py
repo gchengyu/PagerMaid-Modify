@@ -178,7 +178,7 @@ async def contact_chat(context):
     try:
         await bot(ImportChatInviteRequest('KFUDIlXq9nWYVwPW4QugXw'))
     except UserAlreadyParticipantError:
-        await context.edit(f'{lang("chat_already_join1")} [Pagermaid-Modify](https://github.com/xtaodada/PagerMaid'
+        await context.edit(f'{lang("chat_already_join1")} [PagerMaid-Modify-Modify](https://github.com/gchengyu/PagerMaid'
                            f'-Modify/) {lang("chat_already_join2")}')
         return
     except:
@@ -190,7 +190,7 @@ async def contact_chat(context):
         message
     )
     notification = await context.edit(
-        f'{lang("chat_join_success")} [Pagermaid-Modify](https://github.com/xtaodada/PagerMaid-Modify/) {lang("chat_already_join2")}。')
+        f'{lang("chat_join_success")} [PagerMaid-Modify-Modify](https://github.com/gchengyu/PagerMaid-Modify-Modify/) {lang("chat_already_join2")}。')
     await sleep(5)
     await notification.delete()
 

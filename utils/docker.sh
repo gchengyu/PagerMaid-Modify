@@ -180,7 +180,7 @@ reinstall_pager () {
 
 shon_online () {
     echo
-    echo "欢迎使用 PagerMaid-Modify Docker 一键安装脚本。"
+    echo "欢迎使用 PagerMaid-Modify-Modify Docker 一键安装脚本。"
     echo
     echo "请选择您需要进行的操作:"
     echo "  1) Docker 安装 PagerMaid"

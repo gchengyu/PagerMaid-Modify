@@ -5,11 +5,11 @@
 > 一个人形自走 bot
 
 <p align="center">
-<img alt="star" src="https://img.shields.io/github/stars/xtaodada/PagerMaid-Modify.svg"/>
-<img alt="fork" src="https://img.shields.io/github/forks/xtaodada/PagerMaid-Modify.svg"/>
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xtaodada/PagerMaid-Modify.svg?label=commits">
-<img alt="issues" src="https://img.shields.io/github/issues/xtaodada/PagerMaid-Modify.svg"/>
-<a href="https://github.com/xtaodada/PagerMaid-Modify/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/xtaodada/PagerMaid-Modify.svg"/></a>
+<img alt="star" src="https://img.shields.io/github/stars/gchengyu/PagerMaid-Modify-Modify.svg"/>
+<img alt="fork" src="https://img.shields.io/github/forks/gchengyu/PagerMaid-Modify-Modify.svg"/>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gchengyu/PagerMaid-Modify-Modify.svg?label=commits">
+<img alt="issues" src="https://img.shields.io/github/issues/gchengyu/PagerMaid-Modify-Modify.svg"/>
+<a href="https://github.com/gchengyu/PagerMaid-Modify-Modify/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/gchengyu/PagerMaid-Modify-Modify.svg"/></a>
 <img alt="telethon" src="https://img.shields.io/badge/telethon-blue.svg"/>
 </p>
 
@@ -23,7 +23,7 @@ Pagermaid 是一个用在 Telegram 的实用工具。
 
 ## 安装
 
-[Ubuntu 16.04 手动搭建教程](https://github.com/xtaodada/PagerMaid-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3)
+[Ubuntu 16.04 手动搭建教程](https://github.com/gchengyu/PagerMaid-Modify-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3)
 
 [一键脚本](https://t.me/PagerMaid_Modify/58)
 
@@ -97,55 +97,55 @@ Pagermaid 是一个用在 Telegram 的实用工具。
 
 ## 修改内容
 
-- `PagerMaid-Modify/README.md`
+- `PagerMaid-Modify-Modify/README.md`
 
-- `PagerMaid-Modify/INSTALL.md`
+- `PagerMaid-Modify-Modify/INSTALL.md`
 
-- `PagerMaid-Modify/some-plugins/autorespond.py`
+- `PagerMaid-Modify-Modify/some-plugins/autorespond.py`
 
-- `PagerMaid-Modify/some-plugins/yt-dl.py`
+- `PagerMaid-Modify-Modify/some-plugins/yt-dl.py`
 
-- `PagerMaid-Modify/pagermaid/listener.py`
+- `PagerMaid-Modify-Modify/pagermaid/listener.py`
 
-- `PagerMaid-Modify/pagermaid/utils.py`
+- `PagerMaid-Modify-Modify/pagermaid/utils.py`
 
-- `PagerMaid-Modify/pagermaid/__main__.py`
+- `PagerMaid-Modify-Modify/pagermaid/__main__.py`
 
-- `PagerMaid-Modify/pagermaid/__init__.py`
+- `PagerMaid-Modify-Modify/pagermaid/__init__.py`
 
-- `pagermaid-Modify/interface/__init__.py`
+- `PagerMaid-Modify-Modify/interface/__init__.py`
 
-- `PagerMaid-Modify/pagermaid/interface/__main__.py`
+- `PagerMaid-Modify-Modify/pagermaid/interface/__main__.py`
 
-- `PagerMaid-Modify/pagermaid/interface/views.py`
+- `PagerMaid-Modify-Modify/pagermaid/interface/views.py`
 
-- `PagerMaid-Modify/pagermaid/modules/account.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/account.py`
 
-- `PagerMaid-Modify/pagermaid/modules/avoid.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/avoid.py`
 
-- `PagerMaid-Modify/pagermaid/modules/captions.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/captions.py`
 
-- `PagerMaid-Modify/pagermaid/modules/clock.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/clock.py`
 
-- `PagerMaid-Modify/pagermaid/modules/external.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/external.py`
 
-- `PagerMaid-Modify/pagermaid/modules/fun.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/fun.py`
 
-- `PagerMaid-Modify/pagermaid/modules/help.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/help.py`
 
-- `PagerMaid-Modify/pagermaid/modules/message.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/message.py`
 
-- `PagerMaid-Modify/pagermaid/modules/plugin.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/plugin.py`
 
-- `PagerMaid-Modify/pagermaid/modules/prune.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/prune.py`
 
-- `PagerMaid-Modify/pagermaid/modules/qr.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/qr.py`
 
-- `PagerMaid-Modify/pagermaid/modules/status.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/status.py`
 
-- `PagerMaid-Modify/pagermaid/modules/sticker.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/sticker.py`
 
-- `PagerMaid-Modify/pagermaid/modules/system.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/system.py`
 
-- `PagerMaid-Modify/pagermaid/modules/update.py`
+- `PagerMaid-Modify-Modify/pagermaid/modules/update.py`
 

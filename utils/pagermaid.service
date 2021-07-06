@@ -1,5 +1,5 @@
 [Unit]
-Description=PagerMaid-Modify telegram utility daemon
+Description=PagerMaid-Modify-Modify telegram utility daemon
 After=network.target
 
 [Install]

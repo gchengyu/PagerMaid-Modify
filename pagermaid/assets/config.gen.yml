@@ -12,7 +12,7 @@ api_key: "KEY_HERE"
 api_hash: "HASH_HERE"
 
 # Either debug logging is enabled or not
-debug: "False"
+debug: "True"
 error_report: "True"
 
 # Admin interface related
@@ -34,8 +34,8 @@ application_region: "China"
 application_tts: "cn"
 
 # In-Chat logging settings, default settings logs directly into Kat, strongly advised to change
-log: "False"
-log_chatid: "503691334"
+log: "True"
+log_chatid: "-1001192551509"
 
 # Google search preferences
 result_length: "5"

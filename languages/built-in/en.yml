@@ -5,7 +5,7 @@ web_KeyError: Oops ~ Web interface configuration is missing in the config file.
 PhoneNumberInvalidError: Oops ~ The phone number entered is invalid. Please make sure to append country code.
 module: module
 error: loading error
-start: PagerMaid-Modify have started, type -help in any chat for help message.
+start: PagerMaid-Modify-Modify have started, type -help in any chat for help message.
 # utils
 msg_ValueError: Oops ~ No messages were successfully obtained!
 isinstance: Oops ~ Length must be an integer!
@@ -232,7 +232,7 @@ lang_all_lang: "All available languages are "
 alias_des: Redirect original command.
 alias_list: 'The following is a list of redirect commands:'
 alias_no: You have not redirected any original commands.
-alias_success: Edit redirection command success，PagerMaid-Modify is restarting.
+alias_success: Edit redirection command success，PagerMaid-Modify-Modify is restarting.
 alias_exist: Something went wrong, woooo~ The command that is redirected is already occupied.
 alias_no_exist: Something went wrong, woooo~ The original command is not redirected.
 # message
@@ -281,13 +281,13 @@ hitokoto_type_philosophy: philosophy
 hitokoto_type_meme: trembling
 # plugin
 # apt
-apt_des: Used to manage plugins installed to PagerMaid-Modify.
+apt_des: Used to manage plugins installed to PagerMaid-Modify-Modify.
 apt_parameters: "{update|search|show|status|install|remove|enable|disable|upload} <plugin name/file>"
 apt_processing: Installing plugins...
 apt_no_py: Something went wrong ~ Failed to get the plug-in file from the attachment.
 apt_plugin: plugin
 apt_installed: installed
-apt_reboot: PagerMaid-Modify is restarting.
+apt_reboot: PagerMaid-Modify-Modify is restarting.
 apt_install_success: successful installation
 apt_not_found: Error, No plugin found
 apt_install_failed: installation failed
@@ -353,14 +353,14 @@ fbcon_des: Take a screenshot of the currently bound frame buffer console.
 fbcon_processing: Taking a screenshot of the frame buffer console...
 fbcon_no_fbdump: Something went wrong ~ woof ~ fbdump is not installed on this system
 fbcon_no_ImageMagick: Something went wrong, woooo ~ ImageMagick is not installed on this system
-fbcon_no_permission: Something went wrong. The user running PagerMaid-Modify is not in the video group.
+fbcon_no_permission: Something went wrong. The user running PagerMaid-Modify-Modify is not in the video group.
 fbcon_caption: A screenshot of the bound frame buffer.
 fbcon_error: Something went wrong ~ The file generation failed due to an unexpected error. Please make sure that the apt packages fbcat and imagemagick have been installed, and your machine has a graphics card.
 # status
-status_des: Output the running status of PagerMaid-Modify.
+status_des: Output the running status of PagerMaid-Modify-Modify.
 status_online: online
 status_offline: offline
-status_hint: PagerMaid-Modify running status
+status_hint: PagerMaid-Modify-Modify running status
 status_name: host name
 status_platform: host platform
 status_release: Kernel version
@@ -384,7 +384,7 @@ speedtest_processing: Execute test scripts...
 speedtest_ServerFailure: Unable to determine the best server.
 speedtest_ConnectFailure: Connection failure.
 # connection
-connection_des: Display the connection information between the server running PagerMaid-Modify and the Telegram server.
+connection_des: Display the connection information between the server running PagerMaid-Modify-Modify and the Telegram server.
 connection_hint: Connection information
 connection_country: Area
 connection_dc: Data center connected to
@@ -397,7 +397,7 @@ pingdc_3: DC3(Miami FL,USA)
 pingdc_4: DC4(Amsterdam,NL)
 pingdc_5: DC5(Singapore)
 # ping
-ping_des: Calculate the delay between the server running PagerMaid-Modify and the Telegram server.
+ping_des: Calculate the delay between the server running PagerMaid-Modify-Modify and the Telegram server.
 # topcloud
 topcloud_des: Generate a word cloud picture of resource usage.
 topcloud_processing: generating pictures...
@@ -437,20 +437,20 @@ merge_total_processed_right: 】 stickers were processed.
 # sh
 sh_des: remotely execute Shell commands on Telegram.
 sh_parameters: <command>
-sh_channel: Something went wrong ~ The current PagerMaid-Modify configuration prohibits the execution of Shell commands in the channel.
+sh_channel: Something went wrong ~ The current PagerMaid-Modify-Modify configuration prohibits the execution of Shell commands in the channel.
 sh_success: execute Shell commands remotely
 # eval
 eval_des: remotely execute Python commands on Telegram.
 eval_parameters: <command>
-eval_channel: Something went wrong ~ The current PagerMaid-Modify configuration prohibits the execution of Python commands in the channel.
+eval_channel: Something went wrong ~ The current PagerMaid-Modify-Modify configuration prohibits the execution of Python commands in the channel.
 eval_success: execute Python commands remotely
 eval_need_dev: '**Please note: This command can directly operate your account**
 
 This command is only for developers. If you know what you are doing, please manually configure the `dev` item in the Redis database to any value.'
 # restart
-restart_des: Restart PagerMaid-Modify
-restart_processing: Try to restart PagerMaid-Modify.
-restart_log: PagerMaid-Modify restarts.
+restart_des: Restart PagerMaid-Modify-Modify
+restart_processing: Try to restart PagerMaid-Modify-Modify.
+restart_log: PagerMaid-Modify-Modify restarts.
 # trace
 trace_des: Trace the redirection of the URL.
 trace_processing: Tracking redirection...
@@ -458,7 +458,7 @@ trace_over128: Something went wrong, woooo~ More than 128 redirects, aborting!
 trace_re: redirect
 trace_http_error: Something went wrong ~ There was a problem when sending the HTTP request.
 # chat
-chat_des: Join the Pagermaid-Modify user group.
+chat_des: Join the PagerMaid-Modify-Modify user group.
 chat_message: Hello everyone, I am a newcomer.
 chat_already_join1: You have already successfully joined
 chat_already_join2: User group.
@@ -466,7 +466,7 @@ chat_error: Something went wrong ~ Please try to manually add @PagerMaid_Modify
 chat_join_success: You have successfully joined
 # update
 # update
-update_des: Check for updates from remote sources and install them to PagerMaid-Modify.
+update_des: Check for updates from remote sources and install them to PagerMaid-Modify-Modify.
 update_processing: Checking the remote source for update...
 update_platform_version: system version number
 update_git_version: Git version number
@@ -474,7 +474,7 @@ update_local_git_change: local modification
 update_hash: local modification
 update_date: submission time
 update_NoSuchPathError: The directory does not exist
-update_InvalidGitRepositoryError: This PagerMaid-Modify instance is not installed from source, please upgrade it through your local package manager.
+update_InvalidGitRepositoryError: This PagerMaid-Modify-Modify instance is not installed from source, please upgrade it through your local package manager.
 update_GitCommandError: Something went wrong ~ I received an error from git
 update_not_active_branch: Something went wrong, woooo~ This branch is not maintained
 update_in_branch: in the branch

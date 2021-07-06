@@ -16,7 +16,7 @@ from pagermaid.modules import plugin_list as active_plugins, __list_plugins
 try:
     git_source = config['git_source']
 except:
-    git_source = "https://raw.githubusercontent.com/Xtao-Labs/PagerMaid_Plugins/master/"
+    git_source = "https://raw.githubusercontent.com/gchengyu/PagerMaid_Plugins/master/"
 
 
 def get_html(url):
@@ -250,7 +250,7 @@ async def plugin(context):
                 await context.edit(lang('apt_uploading'))
                 await upload_attachment(file_name,
                                         context.chat_id, reply_id,
-                                        caption=f"PagerMaid-Modify {context.parameter[1]} plugin.")
+                                        caption=f"PagerMaid-Modify-Modify {context.parameter[1]} plugin.")
                 remove(file_name)
                 await context.delete()
             else:

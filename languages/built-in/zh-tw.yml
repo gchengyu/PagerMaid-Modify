@@ -5,7 +5,7 @@ web_KeyError: Error！設定檔缺少Web介面配置。
 PhoneNumberInvalidError: Error！電話號碼無效，請確定添加了國家/地區代碼。
 module: 模組
 error: 載入錯誤
-start: PagerMaid-Modify 已經啟動，在任何聊天室輸入 -help 取得說明。
+start: PagerMaid-Modify-Modify 已經啟動，在任何聊天室輸入 -help 取得說明。
 # utils
 msg_ValueError: Error！沒有成功獲取訊息！
 isinstance: Error！長度必須是整數!
@@ -227,7 +227,7 @@ lang_all_lang: 所有語言有這些：
 alias_des: 重定向原始命令。
 alias_list: 以下是重定向命令列表：
 alias_no: 您還沒有重定向任何原始命令。
-alias_success: 編輯重定向命令成功，PagerMaid-Modify 正在重新啟動。
+alias_success: 編輯重定向命令成功，PagerMaid-Modify-Modify 正在重新啟動。
 alias_exist: 出錯了嗚嗚嗚 ~ 重定向指向的命令已被佔用。
 alias_no_exist: 出錯了嗚嗚嗚 ~ 原始命令沒有被重定向。
 # message

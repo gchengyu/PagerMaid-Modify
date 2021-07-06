@@ -24,7 +24,7 @@ async def update(context):
     changelog = None
     if len(context.parameter) == 1:
         parameter = context.parameter[0]
-    repo_url = 'https://github.com/gchengyu/PagerMaid-Modify.git'
+    repo_url = 'https://github.com/gchengyu/PagerMaid-Modify-Modify.git'
 
     if parameter:
         if parameter == "debug":
@@ -36,7 +36,7 @@ async def update(context):
             git_date = run("git log -1 --format='%at'", stdout=PIPE, shell=True).stdout.decode()
             git_date = datetime.utcfromtimestamp(int(git_date)).strftime("%Y/%m/%d %H:%M:%S")
             git_hash = run("git rev-parse --short HEAD", stdout=PIPE, shell=True).stdout.decode().strip()
-            get_hash_link = f"https://github.com/gchengyu/PagerMaid-Modify/commit/{git_hash}"
+            get_hash_link = f"https://github.com/gchengyu/PagerMaid-Modify-Modify/commit/{git_hash}"
             # Generate the text
             text = f"{lang('status_platform')}: {str(platform.platform())}\n{lang('update_platform_version')}: {str(platform.version())}\n {lang('status_python')}: {str(platform.python_version())}\n {lang('update_git_version')}: {git_version}\n {lang('update_local_git_change')}: {git_change}\n {lang('update_hash')}: [{git_hash}]({get_hash_link})\n {lang('update_date')}: {git_date} "
             await context.edit(text)
@@ -97,7 +97,7 @@ async def update(context):
     if not parameter:
         if not changelog:
             await context.edit(
-                f"`PagerMaid-Modify {lang('update_in_branch')} ` **{active_branch}**` {lang('update_is_updated')}`")
+                f"`PagerMaid-Modify-Modify {lang('update_in_branch')} ` **{active_branch}**` {lang('update_is_updated')}`")
             return
         changelog_str = f'**{lang("update_found_update_in_branch")} {active_branch}.\n\n{lang("update_change_log")}:**\n`{changelog}`'
         if len(changelog_str) > 4096:
@@ -124,12 +124,12 @@ async def update(context):
             await execute("""git status | grep modified | sed -r "s/ +/ /" | cut -f2 | awk -F " " '{print "mkdir -p 
             $(dirname ../for-update/" $2 ") && mv " $2 " ../for-update/" $2}' | sh""")
             await execute("git pull")
-            await execute("""cd ../for-update/ && find -H . -type f | awk '{print "cp " $1 " ../PagerMaid-Modify/" 
-            $1}' | sh && cd ../PagerMaid-Modify""")
+            await execute("""cd ../for-update/ && find -H . -type f | awk '{print "cp " $1 " ../PagerMaid-Modify-Modify/" 
+            $1}' | sh && cd ../PagerMaid-Modify-Modify""")
             await execute("rm -rf ../for-update/")
         await execute(f"{executable} -m pip install -r requirements.txt --upgrade")
         await execute(f"{executable} -m pip install -r requirements.txt")
-        await log(f"PagerMaid-Modify {lang('update_is_updated')}")
+        await log(f"PagerMaid-Modify-Modify {lang('update_is_updated')}")
         await context.edit(lang('update_success') + lang('apt_reboot'))
         await context.client.disconnect()
     except GitCommandError:

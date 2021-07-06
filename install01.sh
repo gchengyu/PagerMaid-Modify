@@ -25,7 +25,7 @@ check_sys() {
 
 welcome() {
     echo ""
-    echo " 欢迎使用 PagerMaid-Modify 一键安装程序。"
+    echo " 欢迎使用 PagerMaid-Modify-Modify 一键安装程序。"
     echo " 安装即将开始 "
     echo " 如果您想取消安装，"
     echo " 请在 5 秒钟内按 Ctrl+C 终止此脚本。"
@@ -410,7 +410,7 @@ login_screen() {
 systemctl_reload() {
     echo " 正在写入系统进程守护 . . ."
     echo "[Unit]
-    Description=PagerMaid-Modify telegram utility daemon
+    Description=PagerMaid-Modify-Modify telegram utility daemon
     After=network.target
     [Install]
     WantedBy=multi-user.target

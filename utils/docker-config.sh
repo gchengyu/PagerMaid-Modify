@@ -2,7 +2,7 @@
 
 welcome () {
     echo 
-    echo "欢迎进入 PagerMaid-Modify Docker 。"
+    echo "欢迎进入 PagerMaid-Modify-Modify Docker 。"
     echo "配置即将开始"
     echo 
     sleep 2

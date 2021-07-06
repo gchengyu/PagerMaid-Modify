@@ -16,13 +16,13 @@
 
 
 ```
-curl -fsSL https://raw.githubusercontent.com/xtaodada/PagerMaid-Modify/master/utils/docker.sh | sh
+curl -fsSL https://raw.githubusercontent.com/gchengyu/PagerMaid-Modify-Modify/master/utils/docker.sh | sh
 ```
 
 如果您想在运行之前检查脚本内容：
 
 ```
-curl https://raw.githubusercontent.com/xtaodada/PagerMaid-Modify/master/utils/docker.sh -o docker.sh
+curl https://raw.githubusercontent.com/gchengyu/PagerMaid-Modify-Modify/master/utils/docker.sh -o docker.sh
 vim docker.sh
 chmod 0755 docker.sh
 ./docker.sh
@@ -34,7 +34,7 @@ chmod 0755 docker.sh
 
 ## 从源代码安装
 
-将 `PagerMaid-Modify` 工作目录复制到 `/var/lib` ，然后输入 `/var/lib/pagermaid` ，激活虚拟环境（如果需要），并从 `requirements.txt` 安装所有依赖项
+将 `PagerMaid-Modify-Modify` 工作目录复制到 `/var/lib` ，然后输入 `/var/lib/pagermaid` ，激活虚拟环境（如果需要），并从 `requirements.txt` 安装所有依赖项
 
 ```
 python3 -m pagermaid
