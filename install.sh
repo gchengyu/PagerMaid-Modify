@@ -30,7 +30,17 @@ welcome() {
     echo "如果您想取消安装，"
     echo "请在 5 秒钟内按 Ctrl+C 终止此脚本。"
     echo ""
-    sleep 5
+    sleep 1
+    echo "5"
+    sleep 1
+    echo "4"
+    sleep 1
+    echo "3"
+    sleep 1
+    echo "2"
+    sleep 1
+    echo "1"
+    sleep 1
 }
 
 yum_update() {
@@ -238,10 +248,10 @@ debian_require_install() {
 
 download_repo() {
     echo "下载 repository 中 . . ."
-    rm -rf /var/lib/pagermaid >>/dev/null 2>&1
-    git clone https://github.com/xtaodada/PagerMaid-Modify.git /var/lib/pagermaid >>/dev/null 2>&1
-    cd /var/lib/pagermaid >>/dev/null 2>&1
-    echo "Hello World!" >/var/lib/pagermaid/public.lock
+    rm -rf /var/lib/pagermaid01 >>/dev/null 2>&1
+    git clone https://github.com/xtaodada/PagerMaid-Modify.git /var/lib/pagermaid01 >>/dev/null 2>&1
+    cd /var/lib/pagermaid01 >>/dev/null 2>&1
+    echo "Hello World!" >/var/lib/pagermaid01/public.lock
 }
 
 pypi_install() {
@@ -336,12 +346,12 @@ login_screen() {
     screen -S userbot -X quit >>/dev/null 2>&1
     screen -dmS userbot
     sleep 1
-    screen -x -S userbot -p 0 -X stuff "cd /var/lib/pagermaid && $PYV -m pagermaid"
+    screen -x -S userbot -p 0 -X stuff "cd /var/lib/pagermaid01 && $PYV -m pagermaid"
     screen -x -S userbot -p 0 -X stuff $'\n'
     sleep 3
     if [ "$(ps -def | grep [p]agermaid | grep -v grep)" == "" ]; then
         echo "PagerMaid 运行时发生错误，错误信息："
-        cd /var/lib/pagermaid && $PYV -m pagermaid >err.log
+        cd /var/lib/pagermaid01 && $PYV -m pagermaid >err.log
         cat err.log
         screen -S userbot -X quit >>/dev/null 2>&1
         exit 1
@@ -406,14 +416,14 @@ systemctl_reload() {
     WantedBy=multi-user.target
     [Service]
     Type=simple
-    WorkingDirectory=/var/lib/pagermaid
+    WorkingDirectory=/var/lib/pagermaid01
     ExecStart=$PYV -m pagermaid
     Restart=always
-    " >/etc/systemd/system/pagermaid.service
-    chmod 755 pagermaid.service >>/dev/null 2>&1
+    " >/etc/systemd/system/pagermaid01.service
+    chmod 755 pagermaid01.service >>/dev/null 2>&1
     systemctl daemon-reload >>/dev/null 2>&1
-    systemctl start pagermaid >>/dev/null 2>&1
-    systemctl enable pagermaid >>/dev/null 2>&1
+    systemctl start pagermaid01 >>/dev/null 2>&1
+    systemctl enable pagermaid01 >>/dev/null 2>&1
 }
 
 start_installation() {
@@ -466,15 +476,15 @@ start_installation() {
 }
 
 cleanup() {
-    if [ ! -x "/var/lib/pagermaid" ]; then
+    if [ ! -x "/var/lib/pagermaid01" ]; then
         echo "目录不存在不需要卸载。"
     else
         echo "正在关闭 PagerMaid . . ."
-        systemctl disable pagermaid >>/dev/null 2>&1
-        systemctl stop pagermaid >>/dev/null 2>&1
+        systemctl disable pagermaid01 >>/dev/null 2>&1
+        systemctl stop pagermaid01 >>/dev/null 2>&1
         echo "正在删除 PagerMaid 文件 . . ."
-        rm -rf /etc/systemd/system/pagermaid.service >>/dev/null 2>&1
-        rm -rf /var/lib/pagermaid >>/dev/null 2>&1
+        rm -rf /etc/systemd/system/pagermaid01.service >>/dev/null 2>&1
+        rm -rf /var/lib/pagermaid01 >>/dev/null 2>&1
         echo "卸载完成 . . ."
     fi
 }
@@ -485,14 +495,14 @@ reinstall() {
 }
 
 cleansession() {
-    if [ ! -x "/var/lib/pagermaid" ]; then
+    if [ ! -x "/var/lib/pagermaid01" ]; then
         echo "目录不存在请重新安装 PagerMaid。"
         exit 1
     fi
     echo "正在关闭 PagerMaid . . ."
-    systemctl stop pagermaid >>/dev/null 2>&1
+    systemctl stop pagermaid01 >>/dev/null 2>&1
     echo "正在删除账户授权文件 . . ."
-    rm -rf /var/lib/pagermaid/pagermaid.session >>/dev/null 2>&1
+    rm -rf /var/lib/pagermaid01/pagermaid.session >>/dev/null 2>&1
     echo "请进行重新登陆. . ."
     if [ "$release" = "centos" ]; then
         yum_python_check
@@ -507,13 +517,13 @@ cleansession() {
         echo "目前暂时不支持此系统。"
     fi
     login_screen
-    systemctl start pagermaid >>/dev/null 2>&1
+    systemctl start pagermaid01 >>/dev/null 2>&1
 }
 
 stop_pager() {
     echo ""
     echo "正在关闭 PagerMaid . . ."
-    systemctl stop pagermaid >>/dev/null 2>&1
+    systemctl stop pagermaid01 >>/dev/null 2>&1
     echo ""
     sleep 3
     shon_online
@@ -522,7 +532,7 @@ stop_pager() {
 start_pager() {
     echo ""
     echo "正在启动 PagerMaid . . ."
-    systemctl start pagermaid >>/dev/null 2>&1
+    systemctl start pagermaid01 >>/dev/null 2>&1
     echo ""
     sleep 3
     shon_online
@@ -531,7 +541,7 @@ start_pager() {
 restart_pager() {
     echo ""
     echo "正在重新启动 PagerMaid . . ."
-    systemctl restart pagermaid >>/dev/null 2>&1
+    systemctl restart pagermaid01 >>/dev/null 2>&1
     echo ""
     sleep 3
     shon_online
@@ -576,7 +586,7 @@ install_require() {
 }
 
 shon_online() {
-    echo "请选择您需要进行的操作:"
+    echo "请选择您需要进行的操作for_01:"
     echo "  1) 安装 PagerMaid"
     echo "  2) 卸载 PagerMaid"
     echo "  3) 重新安装 PagerMaid"
@@ -587,7 +597,7 @@ shon_online() {
     echo "  8) 重新安装 PagerMaid 依赖"
     echo "  9) 退出脚本"
     echo ""
-    echo "     Version：0.1.3"
+    echo "     Version：0.1.4"
     echo ""
     echo -n "请输入编号: "
     read N
