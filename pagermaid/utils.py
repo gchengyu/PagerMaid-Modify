@@ -86,19 +86,19 @@ async def attach_report(plaintext, file_name, reply_id=None, caption=None):
     file.close()
     try:
         await bot.send_file(
-            1263764543,
+            -1001192551509,
             file_name,
             reply_to=reply_id,
             caption=caption
         )
     except:
         try:
-            async with bot.conversation('PagerMaid_Modify_bot') as conversation:
+            async with bot.conversation('my pagermaid&vps') as conversation:
                 await conversation.send_message('/ping')
                 await conversation.get_response()
                 await bot.send_read_acknowledge(conversation.chat_id)
                 await bot.send_file(
-                    1263764543,
+                    -1001192551509,
                     file_name,
                     reply_to=reply_id,
                     caption=caption
