@@ -4,7 +4,7 @@ about: 早起的虫子被你抓
 ---
 
 <!--
-请确保已阅读 [文档](https://github.com/gchengyu/PagerMaid-Modify-Modify/wiki) 内相关部分，并按照模版提供信息
+请确保已阅读 [文档](https://github.com/Xtao-Labs/PagerMaid-Modify/wiki) 内相关部分，并按照模版提供信息
 否则 issue 将被立即关闭，请勿重复提issue
 -->
 

@@ -23,7 +23,7 @@ Pagermaid 是一个用在 Telegram 的实用工具。
 
 ## 安装
 
-[Ubuntu 16.04 手动搭建教程](https://github.com/gchengyu/PagerMaid-Modify-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3)
+[Ubuntu 16.04 手动搭建教程](https://github.com/Xtao-Labs/PagerMaid-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3)
 
 [一键脚本](https://t.me/PagerMaid_Modify/58)
 

@@ -4,7 +4,7 @@ about: Submit discovered bugs
 ---
 
 <!--
-Please ensure you have read [wiki](https://github.com/gchengyu/PagerMaid-Modify-Modify/wiki), and provide all the information required by this template.
+Please ensure you have read [wiki](https://github.com/Xtao-Labs/PagerMaid-Modify/wiki), and provide all the information required by this template.
 Otherwise the issue will be closed immediately.Please do not repeat the issue.
 -->
 

@@ -4,7 +4,7 @@ about: Submit a new feature request
 ---
 
 <!--
-Feature Request(https://github.com/gchengyu/PagerMaid-Modify-Modify/wiki) or [issue](https://github.com/gchengyu/PagerMaid-Modify-Modify/issues) , and provide all the information required by this template.
+Feature Request(https://github.com/Xtao-Labs/PagerMaid-Modify/wiki) or [issue](https://github.com/gchengyu/PagerMaid-Modify-Modify/issues) , and provide all the information required by this template.
 Otherwise the issue will be closed immediately.
 -->
 
