@@ -249,7 +249,7 @@ debian_require_install() {
 download_repo() {
     echo " 下载 repository 中 . . ."
     rm -rf /var/lib/pagermaid01 >>/dev/null 2>&1
-    git clone https://github.com/xtaodada/PagerMaid-Modify.git /var/lib/pagermaid01 >>/dev/null 2>&1
+    git clone https://github.com/gchengyu/PagerMaid-Modify.git /var/lib/pagermaid01 >>/dev/null 2>&1
     cd /var/lib/pagermaid01 >>/dev/null 2>&1
     echo "Hello World!" >/var/lib/pagermaid01/public.lock
 }
