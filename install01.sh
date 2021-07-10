@@ -236,7 +236,7 @@ apt_screen_check() {
 
 apt_require_install() {
     echo " 正在安装系统所需依赖，可能需要几分钟的时间 . . ."
-    apt-get install python3.6-dev python3-dev imagemagick software-properties-common tesseract-ocr tesseract-ocr-chi-sim libzbar-dev -y >>/dev/null 2>&1
+    apt-get install python3-dev imagemagick software-properties-common tesseract-ocr tesseract-ocr-chi-sim libzbar-dev -y >>/dev/null 2>&1
     add-apt-repository ppa:dawidd0811/neofetch -y
     apt-get install neofetch -y >>/dev/null 2>&1
 }
