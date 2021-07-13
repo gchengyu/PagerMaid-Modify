@@ -263,7 +263,7 @@ def before_send(event, hint):
 report_time = time()
 git_hash = run("git rev-parse HEAD", stdout=PIPE, shell=True).stdout.decode()
 sentry_sdk.init(
-    "https://a0e1ef3c67ca48f4b1ecfc5538528ef3@o416616.ingest.sentry.io/5312335",
+    "https://54207ba2d1ea4b23bfc04f172627f3aa@o830222.ingest.sentry.io/5861915",
     traces_sample_rate=1.0,
     release=git_hash,
     before_send=before_send,
